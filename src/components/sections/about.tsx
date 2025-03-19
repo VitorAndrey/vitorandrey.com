@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export function About() {
   return (
-    <div className="section">
+    <div id="about" className="section">
       <h2 className="text-2xl md:text-3xl font-bold text-center pb-2">
         About Me
       </h2>
