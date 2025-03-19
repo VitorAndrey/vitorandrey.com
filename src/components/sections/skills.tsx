@@ -2,12 +2,11 @@ import { BadgeCheckIcon } from "lucide-react";
 
 export function Skills() {
   return (
-    <section className="section flex justify-center flex-col items-center min-h-screen snap-center px-4">
+    <section className="section">
       <h2 className="text-3xl font-bold text-center pb-2">Skills</h2>
       <h3 className="text-muted-foreground text-center opacity-80 pb-10">
         Technical Stack
       </h3>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="p-6 rounded-xl border shadow-sm">
           <h3 className="text-lg font-semibold pb-4 text-center">
@@ -23,8 +22,8 @@ export function Skills() {
           </div>
         </div>
 
-        <div className="p-6 rounded-xl border shadow-sm">
-          <h3 className="text-lg font-semibold pb-4 text-center">
+        <div className="p-6 rounded-xl border shadow-sm hidden md:block">
+          <h3 className="text-lg font-semibold pb-4 text-center ">
             Back-end Developer
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">

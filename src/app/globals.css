@@ -125,10 +125,11 @@
     @apply cursor-pointer transition-all hover:scale-[1.01] active:scale-[0.99];
   }
   .section {
-    @apply mx-auto flex min-h-screen w-full max-w-[968px] items-center justify-center px-4;
+    @apply mx-auto flex h-[100dvh] w-full max-w-[968px] snap-center flex-col items-center justify-center px-4 md:h-screen;
   }
 
   .hero_image {
+    @apply h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px];
     background: url(../../public/profile.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -136,9 +137,18 @@
     box-shadow: inset 0 0 0 2px rgb(255 255 255 / 50%);
     order: 1;
     justify-self: center;
-    width: 300px;
-    height: 300px;
     filter: grayscale(0.1);
+  }
+
+  .colorful_bg {
+    background: url(../../public/bg-color.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero_grid {
+    @apply grid items-center gap-2 md:grid-cols-[116px_repeat(2,1fr)];
   }
 
   .center-absolute {
@@ -146,5 +156,23 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero_grid {
+    grid-template-columns: 100px repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_grid {
+    grid-template-columns: 40px 3fr;
+  }
+
+  .hero_image {
+    order: initial;
+    justify-self: center;
+    margin-left: -40px;
   }
 }

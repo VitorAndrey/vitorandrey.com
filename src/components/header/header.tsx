@@ -6,7 +6,7 @@ import { DrawerMenu } from "./drawer-menu";
 
 export function Header() {
   return (
-    <header className="fixed w-full py-4 px-4 md:px-8 h-20 xl:px-[8%] z-50 colorful_bg">
+    <header className="fixed w-full py-4 px-4 md:px-8 h-20 xl:px-[8%] z-50">
       <nav className="flex justify-between items-center w-full">
         <Link href="#">
           <Image
