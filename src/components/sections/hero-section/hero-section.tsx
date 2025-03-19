@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { GithubIcon, LinkedinIcon, MailIcon, SendIcon } from "lucide-react";
+import {
+  ArrowDownIcon,
+  GithubIcon,
+  LinkedinIcon,
+  MailIcon,
+  SendIcon,
+} from "lucide-react";
 import Link from "next/link";
 import ProfileImage from "./profile-image";
 
@@ -7,18 +13,14 @@ export function HeroSection() {
   return (
     <section
       id="hero-section"
-      className="section flex justify-center items-center min-h-screen snap-center"
+      className="section flex justify-center items-center min-h-screen snap-center relative py-12"
     >
       <div>
-        {/* // home container */}
-        <div className="grid grid-cols-[116px_repeat(2,1fr)] items-center gap-2">
-          {/* // home content */}
+        <div className="grid grid-cols-1 md:grid-cols-[116px_repeat(2,1fr)] items-center gap-2">
           <Socials />
           <ProfileImage />
 
           <div>
-            {" "}
-            {/* Home Data */}
             <h1 className="text-5xl flex items-end gap-2 pb-10 font-semibold opacity-90">
               Vitor Andrey 🖐️
             </h1>
@@ -30,11 +32,18 @@ export function HeroSection() {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Temporibus iste, quos cupiditate in aperiam aliquam!
             </p>
-            <Button className="w-36">
+            <Button className="w-full max-w-36 h-12 rounded-xl transition hover:bg-transparent border border-secondary-foreground hover:text-secondary-foreground">
               Contact me <SendIcon size={12} />
             </Button>
           </div>
         </div>
+      </div>
+
+      <div className="absolute bottom-8 gap-2 flex items-center text-xs">
+        <div className="relative flex border-foreground justify-center border-[2px] w-4.5 h-7 rounded-xl">
+          <div className="absolute top-1.5 rounded-xl w-[2px] h-1.5 animate-bounce bg-foreground"></div>
+        </div>
+        <span>Scroll Down</span> <ArrowDownIcon size={20} />
       </div>
     </section>
   );
@@ -42,8 +51,7 @@ export function HeroSection() {
 
 function Socials() {
   return (
-    <div className="grid grid-cols-[max-content] gap-4">
-      {/* //home social */}
+    <div className="md:grid md:grid-cols-[max-content] gap-4 flex items-center justify-center mb-8 md:mb-0">
       <Link
         href="https://github.com/VitorAndrey"
         target="_blank"

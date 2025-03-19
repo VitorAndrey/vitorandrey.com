@@ -6,7 +6,6 @@ export default function ProfileImage() {
   return (
     <motion.div
       className="hero_image rounded-full"
-      // initial={{ opacity: 0, scale: 0.8 }}
       animate={{
         borderRadius: [
           "60% 40% 30% 70% / 60% 30% 70% 40%",
@@ -22,12 +21,6 @@ export default function ProfileImage() {
           ease: "easeInOut",
           repeat: Infinity,
         },
-        // opacity: {
-        //   duration: 1.2,
-        // },
-        // scale: {
-        //   duration: 0.8,
-        // },
       }}
     />
   );
