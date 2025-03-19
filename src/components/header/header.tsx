@@ -18,7 +18,7 @@ export function Header() {
           />
         </Link>
 
-        <div className="hidden bg-background/90 text-sm shadow-sm md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-1">
+        <div className="hidden bg-background/90 text-sm shadow-sm border md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-1">
           {[
             { href: "#hero-section", label: "Home" },
             { href: "#about", label: "About" },

@@ -18,7 +18,7 @@ export function About() {
           alt="Profile Picture"
           width={350}
           height={350}
-          className="rounded-3xl grayscale-100 mx-auto md:mx-0 w-full max-w-[150px] sm:max-w-[225px] md:max-w-[300px] lg:max-w-[350px]"
+          className="rounded-xl grayscale-100 mx-auto md:mx-0 w-full max-w-[150px] sm:max-w-[225px] md:max-w-[300px] lg:max-w-[350px]"
         />
 
         <div className="flex flex-col gap-6 ">
