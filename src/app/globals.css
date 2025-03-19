@@ -122,10 +122,10 @@
     @apply bg-background text-foreground;
   }
   button {
-    @apply cursor-pointer;
+    @apply cursor-pointer transition-all hover:scale-[1.01] active:scale-[0.99];
   }
   .section {
-    @apply mx-auto flex h-screen w-full max-w-[968px] items-center justify-center px-4;
+    @apply mx-auto flex min-h-screen w-full max-w-[968px] items-center justify-center px-4;
   }
 
   .hero_image {
@@ -139,5 +139,12 @@
     width: 300px;
     height: 300px;
     filter: grayscale(0.1);
+  }
+
+  .center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
