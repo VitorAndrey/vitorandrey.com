@@ -1,13 +1,7 @@
 import { Button } from "@/components/ui/button";
-import {
-  ArrowDownIcon,
-  GithubIcon,
-  LinkedinIcon,
-  MailIcon,
-  SendIcon,
-} from "lucide-react";
-import Link from "next/link";
+import { ArrowDownIcon, SendIcon } from "lucide-react";
 import ProfileImage from "./profile-image";
+import { Socials } from "./socials";
 
 export function HeroSection() {
   return (
@@ -15,6 +9,7 @@ export function HeroSection() {
       <div>
         <div className="hero_grid">
           <Socials />
+
           <ProfileImage />
 
           <div className="col-[1/3] md:col-auto text-center md:text-left">
@@ -43,31 +38,5 @@ export function HeroSection() {
         <span>Scroll Down</span> <ArrowDownIcon size={20} />
       </div>
     </section>
-  );
-}
-
-function Socials() {
-  return (
-    <div className="grid grid-cols-[max-content] gap-4">
-      <Link
-        href="https://github.com/VitorAndrey"
-        target="_blank"
-        className="text-muted-foreground hover:text-foreground transition-all"
-      >
-        <GithubIcon size={22} />
-      </Link>
-      <Link
-        href="www.linkedin.com/in/vitor-andrey-lopes-santos"
-        className="text-muted-foreground hover:text-foreground transition-all"
-      >
-        <LinkedinIcon size={22} />
-      </Link>
-      <Link
-        href="mailto:vitor.andreylopes@gmail.com"
-        className="text-muted-foreground hover:text-foreground transition-all"
-      >
-        <MailIcon size={22} />
-      </Link>
-    </div>
   );
 }

@@ -2,7 +2,7 @@ import { BadgeCheckIcon } from "lucide-react";
 
 export function Skills() {
   return (
-    <section className="section">
+    <section id="skills" className="section">
       <h2 className="text-3xl font-bold text-center pb-2">Skills</h2>
       <h3 className="text-muted-foreground text-center opacity-80 pb-10">
         Technical Stack
