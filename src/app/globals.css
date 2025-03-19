@@ -125,7 +125,7 @@
     @apply cursor-pointer transition-all hover:scale-[1.01] active:scale-[0.99];
   }
   .section {
-    @apply mx-auto flex h-[100dvh] w-full max-w-[968px] snap-center flex-col items-center justify-center px-4 md:h-screen;
+    @apply mx-auto flex h-[100dvh] w-full max-w-[968px] flex-col items-center justify-center px-4 md:h-screen;
   }
 
   .hero_image {

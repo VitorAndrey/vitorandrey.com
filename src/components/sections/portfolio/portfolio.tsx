@@ -42,7 +42,7 @@ const projects = [
 
 export function Portfolio() {
   return (
-    <div id="portfolio" className="section">
+    <div id="portfolio" className="section snap-end">
       <h2 className="text-2xl md:text-3xl font-bold text-center pb-2">
         Portfolio
       </h2>
