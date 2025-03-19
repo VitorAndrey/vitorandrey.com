@@ -12,17 +12,11 @@ export default function Home() {
       <div className="h-screen snap-y overflow-y-auto snap-mandatory">
         <HeroSection />
 
-        <div id="about" className="snap-center">
-          <About />
-        </div>
+        <About />
 
-        <div id="skills" className="snap-center">
-          <Skills />
-        </div>
+        <Skills />
 
-        <div id="portfolio" className="snap-center">
-          <Portfolio />
-        </div>
+        <Portfolio />
       </div>
     </main>
   );
