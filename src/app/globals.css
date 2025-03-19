@@ -140,13 +140,6 @@
     filter: grayscale(0.1);
   }
 
-  .colorful_bg {
-    background: url(../../public/bg-color.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
   .hero_grid {
     @apply grid items-center gap-2 md:grid-cols-[116px_repeat(2,1fr)];
   }
