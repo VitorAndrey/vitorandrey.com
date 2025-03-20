@@ -22,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="overflow-x-hidden" suppressHydrationWarning>
       <body
-        className={`${poppins.className} antialiased transition-all scroll-smooth overflow-x-hidden`}
+        className={`${poppins.className} antialiased transition-all scroll-smooth `}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}

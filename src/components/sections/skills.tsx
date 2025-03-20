@@ -13,12 +13,10 @@ export function Skills() {
             Front-end Developer
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <SkillItem skill="HTML" />
-            <SkillItem skill="CSS" />
-            <SkillItem skill="JavaScript" />
-            <SkillItem skill="TypeScript" />
-            <SkillItem skill="React.js" />
             <SkillItem skill="Next.js" />
+            <SkillItem skill="React.js" />
+            <SkillItem skill="Expo" />
+            <SkillItem skill="TypeScript" />
           </div>
         </div>
 
@@ -27,12 +25,10 @@ export function Skills() {
             Back-end Developer
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <SkillItem skill="Node.js" />
-            <SkillItem skill="Express.js" />
             <SkillItem skill="Nest.js" />
-            <SkillItem skill="PostgreSQL" />
-            <SkillItem skill="MongoDB" />
-            <SkillItem skill="Prisma" />
+            <SkillItem skill="Node.js" />
+            <SkillItem skill="SQL" />
+            <SkillItem skill="TypeScript" />
           </div>
         </div>
       </div>
