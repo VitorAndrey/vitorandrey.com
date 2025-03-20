@@ -63,7 +63,7 @@ export function About() {
 
           <Link
             download
-            href={"/John-Cv.pdf"}
+            href={"/VitorAndrey_CV.pdf"}
             target="_blank"
             className={cn(
               buttonVariants(),
