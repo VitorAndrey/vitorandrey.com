@@ -1,6 +1,7 @@
 .swiper {
-  width: 240px;
-  height: 320px;
+  width: 68vw;
+  height: 45vh;
+  min-height: 350px;
 }
 
 .swiper-slide {

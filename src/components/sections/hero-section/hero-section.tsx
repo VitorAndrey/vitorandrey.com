@@ -1,5 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { ArrowDownIcon, SendIcon } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { ArrowDownIcon, ImageIcon } from "lucide-react";
+import Link from "next/link";
 import ProfileImage from "./profile-image";
 import { Socials } from "./socials";
 
@@ -21,12 +23,18 @@ export function HeroSection() {
               Full Stack Engineer
             </h3>
             <p className="pb-6 text-muted-foreground max-w-sm">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Temporibus iste, quos cupiditate in aperiam aliquam!
+              Crafting web, mobile, and desktop apps with Typescript,
+              specializing in React, and Node.js to build great solutions
             </p>
-            <Button className="w-full max-w-36 h-12 rounded-xl transition hover:bg-transparent border border-secondary-foreground hover:text-secondary-foreground">
-              Contact me <SendIcon size={12} />
-            </Button>
+            <Link
+              href="#portfolio"
+              className={cn(
+                buttonVariants(),
+                "w-full max-w-40 h-12 rounded-xl transition hover:bg-transparent border border-secondary-foreground hover:text-secondary-foreground",
+              )}
+            >
+              See my Work <ImageIcon size={12} />
+            </Link>
           </div>
         </div>
       </div>

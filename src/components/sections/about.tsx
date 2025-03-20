@@ -1,6 +1,16 @@
-import { DownloadCloudIcon, HomeIcon } from "lucide-react";
+"use client";
+
+import { cn } from "@/lib/utils";
+import {
+  AwardIcon,
+  BriefcaseBusinessIcon,
+  DownloadCloudIcon,
+  HeadphonesIcon,
+} from "lucide-react";
 import Image from "next/image";
-import { Button } from "../ui/button";
+
+import Link from "next/link";
+import { buttonVariants } from "../ui/button";
 
 export function About() {
   return (
@@ -23,37 +33,45 @@ export function About() {
 
         <div className="flex flex-col gap-6 ">
           <div className="flex gap-2">
-            <div className="border flex-1 rounded-2xl md:p-4 p-2 md:h-30 py-3 md:gap-1 flex flex-col items-center text-center justify-center">
-              <HomeIcon size={20} />
-              <h3>Sample</h3>
+            <div className="border flex-1 rounded-2xl md:p-4 p-2 md:h-30 py-3 gap-1 flex flex-col items-center text-center justify-center">
+              <BriefcaseBusinessIcon size={18} />
+              <h3 className="text-sm font-semibold">Completed</h3>
               <span className="text-muted-foreground text-xs px-2">
-                3+ years
+                30+ projects
               </span>
             </div>
-            <div className="border flex-1 rounded-2xl md:p-4 p-2 md:h-30 py-3 md:gap-1 flex flex-col items-center text-center justify-center">
-              <HomeIcon size={20} />
-              <h3>Sample</h3>
+
+            <div className="border flex-1 rounded-2xl md:p-4 p-2 md:h-30 py-3 gap-1 flex flex-col items-center text-center justify-center">
+              <AwardIcon size={18} />
+              <h3 className="text-sm font-semibold">Experience</h3>
               <span className="text-muted-foreground text-xs px-2">
-                3+ years
+                Full Stack
               </span>
             </div>
-            <div className="border flex-1 rounded-2xl md:p-4 p-2 md:h-30 py-3 md:gap-1 flex flex-col items-center text-center justify-center">
-              <HomeIcon size={20} />
-              <h3>Sample</h3>
-              <span className="text-muted-foreground text-xs px-2">
-                3+ years
-              </span>
+
+            <div className="border flex-1 rounded-2xl md:p-4 p-2 md:h-30 py-3 gap-1 flex flex-col items-center text-center justify-center">
+              <HeadphonesIcon size={18} />
+              <h3 className="text-sm font-semibold">Support</h3>
+              <span className="text-muted-foreground text-xs px-2">24/7</span>
             </div>
           </div>
 
           <p className="text-muted-foreground text-center max-w-sm md:text-left text-sm md:text-base">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            perferendis necessitatibus eum .
+            I started coding games as a kid, driven by curiosity and a passion
+            for problem-solving. Now, I build applications using JavaScript
           </p>
 
-          <Button className="w-full max-w-44 self-center md:self-start h-12 rounded-xl transition hover:bg-transparent border border-secondary-foreground hover:text-secondary-foreground">
+          <Link
+            download
+            href={"/John-Cv.pdf"}
+            target="_blank"
+            className={cn(
+              buttonVariants(),
+              "w-full max-w-44 self-center md:self-start h-12 rounded-xl transition hover:bg-transparent border border-secondary-foreground hover:text-secondary-foreground",
+            )}
+          >
             Download CV <DownloadCloudIcon size={12} />
-          </Button>
+          </Link>
         </div>
       </div>
     </div>

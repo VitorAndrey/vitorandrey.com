@@ -14,21 +14,22 @@ import { EffectCards } from "swiper/modules";
 
 const projects = [
   {
+    url: "https://www.linkedin.com/posts/vitor-andrey-lopes-santos_sistema-de-gest%C3%A3o-para-empresas-de-m%C3%B3veis-activity-7308283891201576960-ZmWj?utm_source=share&utm_medium=member_android&rcm=ACoAAEKDVnoBsgopMgH0L8U1ikPQptmrqP6gU3k",
+    image: "/moveis-peview.png",
+    platform: "Web",
+    name: "Moveis",
+    title: "Moveis Store",
+    description:
+      "A system for real-time stock management, product reports, and customer catalogs for furniture businesses.",
+  },
+  {
     url: "https://network-news.vercel.app/",
     image: "/network-preview.png",
     platform: "Web",
     name: "Network",
     title: "Network News App",
     description:
-      "A mobile app for staying updated with the latest network news.",
-  },
-  {
-    url: "https://www.linkedin.com/posts/vitor-andrey-lopes-santos_sistema-de-gest%C3%A3o-para-empresas-de-m%C3%B3veis-activity-7308283891201576960-ZmWj?utm_source=share&utm_medium=member_android&rcm=ACoAAEKDVnoBsgopMgH0L8U1ikPQptmrqP6gU3k",
-    image: "/moveis-peview.png",
-    platform: "Web",
-    name: "Moveis",
-    title: "Moveis Store",
-    description: "An e-commerce platform for furniture shopping.",
+      "A portal for hosting newsletters and tech-related content by a passionate IT team.",
   },
   {
     url: "https://www.linkedin.com/posts/vitor-andrey-lopes-santos_gostaria-compartilhar-o-projeto-incr%C3%ADvel-activity-7156635084333162497-jVCr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKDVnoBsgopMgH0L8U1ikPQptmrqP6gU3k",
@@ -37,7 +38,7 @@ const projects = [
     name: "Martinho",
     title: "Martinho Project",
     description:
-      "A web project showcasing innovative solutions for modern challenges.",
+      "An app that helps users navigate supermarkets, find aisles, and get promotions along the way.",
   },
 ];
 
