@@ -9,34 +9,35 @@ import "swiper/css/effect-cards";
 
 import "./styles.css";
 
+import Image from "next/image";
 import { EffectCards } from "swiper/modules";
 
 const projects = [
   {
-    url: "https://www.linkedin.com/posts/vitor-andrey-lopes-santos_gostaria-compartilhar-o-projeto-incr%C3%ADvel-activity-7156635084333162497-jVCr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKDVnoBsgopMgH0L8U1ikPQptmrqP6gU3k",
-    image: "/work1.jpg",
+    url: "https://network-news.vercel.app/",
+    image: "/network-preview.png",
     platform: "Web",
-    name: "Martinho",
-    title: "Martinho Project",
-    description:
-      "A web project showcasing innovative solutions for modern challenges.",
-  },
-  {
-    url: "#portfolio",
-    image: "/work2.jpg",
-    platform: "Mobile",
     name: "Network",
     title: "Network News App",
     description:
       "A mobile app for staying updated with the latest network news.",
   },
   {
-    url: "#portfolio",
-    image: "/work3.jpg",
+    url: "https://www.linkedin.com/posts/vitor-andrey-lopes-santos_sistema-de-gest%C3%A3o-para-empresas-de-m%C3%B3veis-activity-7308283891201576960-ZmWj?utm_source=share&utm_medium=member_android&rcm=ACoAAEKDVnoBsgopMgH0L8U1ikPQptmrqP6gU3k",
+    image: "/moveis-peview.png",
     platform: "Web",
     name: "Moveis",
     title: "Moveis Store",
     description: "An e-commerce platform for furniture shopping.",
+  },
+  {
+    url: "https://www.linkedin.com/posts/vitor-andrey-lopes-santos_gostaria-compartilhar-o-projeto-incr%C3%ADvel-activity-7156635084333162497-jVCr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKDVnoBsgopMgH0L8U1ikPQptmrqP6gU3k",
+    image: "/martinho-preview.png",
+    platform: "Mobile",
+    name: "Martinho",
+    title: "Martinho Project",
+    description:
+      "A web project showcasing innovative solutions for modern challenges.",
   },
 ];
 
@@ -55,18 +56,24 @@ export function Portfolio() {
           <Link
             key={index}
             href={project.url}
-            className="flex flex-col flex-1 gap-4"
+            target="_blank"
+            className="flex flex-col flex-1 gap-1"
           >
-            <img
-              src={project.image}
-              alt={`${project.name} Preview`}
-              className="rounded-lg brightness-50 dark:brightness-75 transition-all"
-            />
-            <span className="text-sm text-muted-foreground">
+            <div className="w-full h-[180px] relative">
+              <Image
+                fill
+                src={project.image}
+                alt={`${project.name} Preview`}
+                className="bg-cover bg-center border brightness-75 dark:brightness-90 transition-all"
+              />
+            </div>
+
+            <span className="text-xs text-muted-foreground mt-2 flex items-center gap-2">
+              <div className="h-px w-4 bg-muted-foreground"></div>
               {project.platform}
             </span>
             <h4 className="text-lg font-semibold">{project.title}</h4>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs md:pr-4 text-muted-foreground">
               {project.description}
             </p>
           </Link>
@@ -82,7 +89,11 @@ export function Portfolio() {
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index} className="bg-background border">
-              <Link href={project.url} className="flex flex-col gap-2">
+              <Link
+                href={project.url}
+                target="_blank"
+                className="flex flex-col gap-2"
+              >
                 <img
                   src={project.image}
                   alt={`${project.name} Preview`}
