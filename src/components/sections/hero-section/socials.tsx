@@ -12,7 +12,7 @@ export function Socials() {
         <GithubIcon size={22} />
       </Link>
       <Link
-        href="https://www.linkedin.com/in/vitor-andrey-lopes-santos"
+        href="https://www.linkedin.com/in/vitor-andrey-ls"
         className="text-muted-foreground hover:text-foreground transition-all"
       >
         <LinkedinIcon size={22} />
