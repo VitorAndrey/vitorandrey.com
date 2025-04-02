@@ -14,7 +14,7 @@ import { EffectCards } from "swiper/modules";
 
 const projects = [
   {
-    url: "https://www.linkedin.com/posts/vitor-andrey-lopes-santos_sistema-de-gest%C3%A3o-para-empresas-de-m%C3%B3veis-activity-7308283891201576960-ZmWj?utm_source=share&utm_medium=member_android&rcm=ACoAAEKDVnoBsgopMgH0L8U1ikPQptmrqP6gU3k",
+    url: "https://www.linkedin.com/posts/vitor-andrey-ls_sistema-de-gest%C3%A3o-para-empresas-de-m%C3%B3veis-activity-7308283891201576960-Eh1_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKDVnoBsgopMgH0L8U1ikPQptmrqP6gU3k",
     image: "/moveis-peview.png",
     platform: "Web",
     name: "Moveis",
@@ -32,7 +32,7 @@ const projects = [
       "A portal for hosting newsletters and tech-related content by a passionate IT team.",
   },
   {
-    url: "https://www.linkedin.com/posts/vitor-andrey-lopes-santos_gostaria-compartilhar-o-projeto-incr%C3%ADvel-activity-7156635084333162497-jVCr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKDVnoBsgopMgH0L8U1ikPQptmrqP6gU3k",
+    url: "https://www.linkedin.com/posts/vitor-andrey-ls_gostaria-compartilhar-o-projeto-incr%C3%ADvel-activity-7156635084333162497-vkhx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKDVnoBsgopMgH0L8U1ikPQptmrqP6gU3k",
     image: "/martinho-preview.png",
     platform: "Mobile",
     name: "Martinho",
